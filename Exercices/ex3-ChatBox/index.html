@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Encodage pour les accents -->
+        <meta charset="UTF-8">
+        
+        <!-- Titre de la Page -->
+        <title>Javascript | Multiples Formulaires</title>
+
+        <!-- Pour Internet Explorer : S'assurer qu'il utilise la dernière version du moteur de rendu -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Affichage sans zoom pour les mobiles -->
+        <meta name="viewport" content="width=device-width, init-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!--  Font Awesome | Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- HTML5 Shiv & Respond JS -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+        <![endif]-->
+
+        <style>
+            body {
+                background-color: rgb(20, 20, 20)
+            }
+
+            #menu {
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+
+            header {
+                padding: 10px;
+            }
+
+            form {
+                text-align: center;
+                margin-top: 20vh;
+            }
+
+            form .text {
+                width: 90%;
+                padding: 5px;
+                margin-bottom: 20px
+            }
+
+            .dropdown-item {
+                text-align: center;
+            }
+
+            .messages {
+                border: black solid 1px;
+                height: auto;
+                min-height: 500px;
+                margin-bottom: 50px;
+                width: 40%;
+                margin-left: 5%;
+                margin-top: 50px;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #text {
+                border-color: blue;
+            }
+
+            #text2 {
+                border-color: red;
+            }
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+        
+        <header class="navbar navbar-inverse">
+            <div class="logo"></div>
+
+            <div class="col-sm-4"></div>
+
+            <div class="col-sm-1 nav-item" id="menu">
+                <a class="nav-link" href="#">menu</a>
+            </div>
+
+            <div class="notif show col-sm-2">
+                <button type="button" class="btn btn-primary" id="notif">
+                    Notifications 
+                    <span class="badge badge-light">0</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <form action="machin.php" id="monForm" class='col-xs-3'>
+                <div class="dropdown show col-sm-12">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Etienne
+                    </a>
+        
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item col-xs-12" href="#">Marc</a>
+                        <a class="dropdown-item col-xs-12" href="#">Etienne</a>
+                        <a class="dropdown-item col-xs-12" href="#">Jesus</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12">
+                    <textarea id="text" class="text"></textarea>
+                </div>
+
+                <div class="col-sm-12">
+                    <input type="submit" id="submit" value="Envoyer" class="submit">  
+                </div>
+                
+            </form>
+
+            <div class="messages col-xs-6"></div>
+
+            <form action="machin.php" id="monForm2" class='col-xs-3'>
+                <div class="dropdown show col-xs-12">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: red">
+                        Jerome
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item col-xs-12" href="#">Jerome</a>
+                        <a class="dropdown-item col-xs-12" href="#">Lou</a>
+                        <a class="dropdown-item col-xs-12" href="#">Marion</a>
+                        <a class="dropdown-item col-xs-12" href="#">Jesus</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12">
+                    <textarea id="text2" class="text"></textarea>
+                </div>
+
+                <div class="col-sm-12">
+                    <input type="submit" id="submit2" value="Envoyer" class="submit">  
+                </div>
+            </form>
+
+        </main>
+
+
+
+         <!-- jQuery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
+
+
+
+
+
+        <script>
+                    /* ----------------------------------------------------
+                                        ******************
+                                        *   CONSIGNES    *
+                                        ******************
+
+
+                        1 - Utiliser les formulaires 1 (bleu) et 2 (rouge)
+                     pour afficher un message dans la chatbox                       (simple)
+
+                        2 - Gérer la chatbox : - nombre de messages maximum         (moyen)
+                                               - Affichage à droite/gauche
+                                        et à la ligne                               (simple)
+                                               - Couleurs                           (simple)
+                                               - Réinitialisation du
+                                        <textarea> à chaque envoi                   (simple)
+                        
+                        3 - Gérer les notifications : - Incrémentation 
+                                        lors de chaque envoi                        (moyen +)
+                                                      - Réinitialisation
+                                        à 0 lorsque l'on clique dessus              (simple si on a fait l'étape du dessus)
+
+                        4 - Faire en sorte que l'on puisse changer le nom
+                     de l'utilisateur en cliquant dessus (grâce aux 
+                     éléments de la classe "dropdown")                              (moyen +)
+
+                    ----------------------------------------------------- */
+        </script>
+
+        <script>
+            var messages = [
+                {nom: 'Etienne', message:'Salut beauté', color: 'blue'},
+                {nom: 'Lou', message:'Bonjour Maître, que puis-je faire pour vous satisfaire aujourd\'hui ?', color: 'red'},
+            ]
+
+            $(function() {
+
+                // On affiche les premiers messages du tableau
+                for(let i=0; i<messages.length; i++) {
+                    if(messages[i].color == 'blue') {
+                        $('.messages').append('<p class="col-xs-8" style="float: left"><strong>' + messages[i].nom + '</strong> : <a style="text-decoration: none; color: blue">' + messages[i].message +'</a></p>')
+                    } else {
+                        $('.messages').append('<p class="col-xs-8" style="float: right"><span style="float: right"> <a class="col-xs-10" style="text-decoration: none; color: red">' + messages[i].message +'</a> <strong class="col-xs-2">' + messages[i].nom + '</strong></span></p>')
+                    } 
+                }
+
+
+
+
+                /* ------------------------------------------------
+                                    FORMULAIRES
+                ------------------------------------------------ */
+
+                // On écoute le formulaire 1
+                $('#monForm').submit(function(e) {
+                    // On empeche le formulaire de s'envoyer
+                    e.preventDefault()
+
+                    // On récupère le message
+                    message = $('#text')
+
+                    // On stock le message dans le tableau prévu à cet effet (pas nécessaire mais ça peut etre utile un jour)
+                    messages.push({nom: $("#dropdownMenuLink").text(), message: message.val(), color: 'blue'})
+
+                    // On supprime le message le plus ancien si besoin
+                    if (messages.length > 20) {
+                        $('.messages p').first().remove()
+                    }
+
+                    // On affiche le nouveau message
+                    $('.messages').append('<p class="col-xs-8" style="float: left"><strong> ' + $("#dropdownMenuLink").text() + ' </strong> : <a style="text-decoration: none; color: blue">' + message.val() +'</a></p>')
+
+                    // On clean la zone de text
+                    message.val("")
+
+                    // On ajoute la notification
+                    $('.notif span').text(parseInt($('.notif span').text(), 10) + 1)
+
+
+                })
+
+
+                // On écoute le formulaire 2
+                $('#monForm2').submit(function(e) {
+                    // On empeche le formulaire de s'envoyer
+                    e.preventDefault()
+
+                    // On récupère le message
+                    message = $('#text2')
+
+                    // On stock le message dans le tableau prévu à cet effet
+                    messages.push({nom: $("#dropdownMenuLink2").text(), message: message.val(), color: 'red'})
+
+                    // On supprime le message le plus ancien si besoin
+                    if (messages.length > 20) {
+                        $('.messages p').first().remove()
+                    }
+
+                    // On affiche le nouveau message
+                    $('.messages').append('<p class="col-xs-8" style="float: right"> <span style="float: right"><a style="text-decoration: none; color: red">' + message.val() +'</a> : <strong> ' + $("#dropdownMenuLink2").text() + ' </strong> </span></p>')
+                    
+                    // On clean la zone de text
+                    message.val("")
+
+                    // On ajoute la notification
+                    $('.notif span').text(parseInt($('.notif span').text(), 10) + 1)
+                })
+
+
+
+
+
+                /* ----------------------------------------------
+                                  NOTIFICATIONS
+                ---------------------------------------------- */
+
+                $('#notif').click(function() {
+                    // On remet les notifs à 0
+                    $('.notif span').text(0)
+                })
+
+
+
+
+                /* ----------------------------------------------
+                                CHANGEMENT DE NOMS
+                ---------------------------------------------- */
+
+                $('.dropdown-item').click(function() {
+                    // On stock le nom séléctionné
+                    var nom = $(this).text()
+
+                    // On remplace la valeur affichée
+                    $(this).parent().parent().children().first().text(nom)
+                })
+
+
+
+            })
+           
+        </script>
+
+    </body>
+</html>

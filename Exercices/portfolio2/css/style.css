@@ -1,0 +1,46 @@
+header {
+    height: 8vh;
+    border-radius: 20px;
+}
+
+header .dropdown button {
+    width: 150px;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-left: 0px;
+}
+
+#topHeader {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 500;
+}
+
+#topHeader button img {
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-right: auto;
+}
+
+
+
+.menu {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topHeader a {
+    font-size: 20px;
+    margin: 0 150px;
+}
+
+#topHeader a:hover {
+    text-decoration: none;
+}
+
+

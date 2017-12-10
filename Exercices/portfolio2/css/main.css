@@ -1,0 +1,244 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 58, 58);  
+    padding-top: 8vh;
+}
+
+.carousel {
+    width: 100%;
+    height: 92vh;
+    padding: 15%;
+}
+
+.barder {
+    background-color: black;
+    opacity: 0.1;
+    height: 92vh;
+    width: 8%;
+    border: none !important;
+}
+
+.barder:hover {
+    opacity: 0.6
+}
+
+.barder p {
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.more {
+    background-color: black;
+    opacity: 0;
+    height: 6vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    z-index: 1000;
+}
+
+.more a {
+    text-decoration: none;
+}
+
+.more:hover {
+    opacity: 0.7
+}
+
+
+
+
+
+#allPlan img {
+    width: 80%;
+    height: auto
+}
+
+#allPlan img:hover {
+    box-shadow: 2px 2px 15px 10px
+}
+
+.p1 .active img:hover {
+    width: 500%;
+}
+
+
+
+
+.description {
+    width: 100%;
+    height: auto;
+    background-color: rgb(124, 124, 124);
+    text-align: center;
+    color: white;
+    padding: 100px;
+
+}
+
+.description h2 {
+    font-size: 50px;
+    margin-bottom: 150px;
+}
+
+#scroll1 {
+    height: 100px;
+}
+
+#deco1 {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: 30;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        /* -------------
+            FIGURES
+        ------------- */
+
+.cercle {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    z-index: 150;
+}
+
+.cercleRight {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(150px) translateY(-50%);
+    z-index: 150;
+}
+
+.cercleLeft {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-150px) translateX(-100%) translateY(-50%);
+    z-index: 150;
+}
+
+.losange {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    -webkit-transform: rotate(45deg);
+    background-color: rgb(43, 43, 43);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    z-index: 150;
+}
+
+.losange p {
+    -webkit-transform: rotate(-45deg);
+}
+
+.trait {
+    width: 1px;
+    height: 200px;
+    margin: 0px auto;
+    border: dashed 1px black;
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.medium {
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+}
+
+.large {
+    width: 400px;
+    height: 400px;
+    padding: 100px
+}
+
+
+
+
+
+
+        /* -------------------------
+                  ROTATE
+        ------------------------- */
+
+.rotate {
+    height: 1px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+}
+
+.rotateSm {
+    -webkit-transform: translateY(-50px) translateX(50px);
+}
+
+.rotate0 {
+    -webkit-transform: translateY(-75px) translateX(75px);
+}
+
+.rotateMd {
+    -webkit-transform: translateY(-125px) translateX(125px);
+}
+
+.rotateLg {
+    -webkit-transform: translateY(-200px) translateX(200px);
+}
+
+.-rotate {
+    -webkit-transform: translateX(-100%);
+    height: 1px;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+}
+
+.-rotateSm {
+    -webkit-transform: translateY(-50px) translateX(-200px)
+}
+
+.-rotate0 {
+    -webkit-transform: translateY(-75px) translateX(225px);
+}
+
+.-rotateMd {
+    -webkit-transform: translateY(-125px) translateX(-275px);
+}
+
+.-rotateLg {
+    -webkit-transform: translateY(-200px) translateX(-350px);
+}
+
+
+

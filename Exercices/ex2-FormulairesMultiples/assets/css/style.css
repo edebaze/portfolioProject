@@ -1,0 +1,29 @@
+main {
+    text-align: center;
+    overflow: hidden;
+}
+
+main h2{
+    margin-bottom: 30px;
+}
+
+.barreProgression {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+}
+
+
+main input {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+main form div {
+    display: none;
+}
+
+main form .current {
+    display: block;
+}
