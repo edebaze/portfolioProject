@@ -1,0 +1,141 @@
+body {
+    background: url('../img/background.jpg') no-repeat;
+    background-size: cover;
+}
+
+#envoyer {
+    width: 120px;
+    height: 50px;
+    margin: 15px auto;
+    position: absolute;
+    z-index: 5000;
+    left: 55%;
+    top: 30%;
+}
+
+#next {
+    width: 120px;
+    height: 50px;
+    margin: 15px auto;
+    position: absolute;
+    z-index: 5000;
+    left: 45%;
+    top: 30%;
+}
+
+#couche {
+    width: 120px;
+    height: 50px;
+    margin: 15px auto;
+    position: absolute;
+    z-index: 5000;
+    left: 35%;
+    top: 30%;
+}
+
+.table {
+    width: 100%;
+    max-width: 1000px;
+    height: 90vh;
+    margin: 0 auto;
+    background: url('../img/table.jpg') no-repeat;
+    background-size: cover;
+}
+
+.joueur {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+    padding: 40px 10px;
+}
+
+.pot {
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    left: 50%;
+    bottom: 30%;
+    -webkit-transform: translateX(-50%)
+}
+
+#j1 {
+    left: 50%;
+    top: 80vh;
+    -webkit-transform: translateX(-50%) translateY(-20%);
+}
+
+#j2 {
+    left: 23%;
+    top: 70vh;
+}
+
+#j3 {
+    left: 10%;
+    top: 35vh;
+}
+
+#j4 {
+    left: 23%;
+}
+
+#j5 {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+}
+
+#j6 {
+    right: 23%;
+}
+
+#j7 {
+    right: 10%;
+    top: 35vh;
+}
+
+#j8 {
+    right: 23%;
+    top: 70vh;
+}
+
+
+
+
+
+/* CARTES */
+
+.cartesZone {
+    width: 100%;
+    max-width: 450px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    border: white 5px dashed;    
+}
+
+.carte {
+    width: 70px;
+    height: auto;
+    margin: 10px 5px;
+    position: relative;
+}
+
+
+
+/* Class Joueurs */
+
+.tour {
+    border-color: red !important;
+}
+
+.dealer {
+    border-color: yellow;
+}
+
+.couche {
+    border-color: grey;
+}
+
